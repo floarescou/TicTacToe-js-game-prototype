@@ -1,0 +1,90 @@
+.none {
+    display: none;
+}
+.inactive {
+    position: absolute;
+    background-color: rgba(74, 61, 46, 0.65);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.theme-block img {
+    pointer-events: none;
+}
+.bg-decor {
+    position: absolute;
+    z-index: -10;
+}
+.bg-decor__top {
+    width: 360px;
+    top: 80px;
+    left: -38px;
+}
+.bg-decor__bottom {
+    width: 300px;
+    bottom: 26px;
+    right: -19px;
+}
+.bg-decor__top img, .bg-decor__bottom img {
+    width: 100%;
+    object-fit: contain;
+}
+.chip-cell {
+    position: absolute;
+    display: none;
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+:root {
+    --animate-duration: 0.5s;
+    --animate-delay: 0.5s;
+    --animate-repeat: 1;
+}
+.animate__animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+
+    to {opacity: 1;}
+}
+.animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.btn-shadow {
+    animation-name: boxShadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Для чередования цветов */
+}
+@keyframes boxShadow {
+    from {box-shadow: 0 0 3px 2px #859666; }
+    to { box-shadow: 0 0 12px 5px #859666; }
+}
+
+.resize-pic {
+    animation-name: ResizePic;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Для чередования цветов */
+}
+@keyframes ResizePic {
+    from {transform: scale(0.97)}
+    to {transform: scale(1.03)}
+}

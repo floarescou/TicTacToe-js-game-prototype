@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px){
+    .bg-decor__top {
+        width: 265px;
+    }
+    .bg-decor__bottom {
+        width: 225px;
+    }
+}
+@media screen and (max-width: 425px){
+    .bg-decor__top {
+        width: 180px;
+    }
+    .bg-decor__bottom {
+        width: 150px;
+    }
+}

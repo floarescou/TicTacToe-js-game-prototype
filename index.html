@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/tech-classes.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+<div class="inactive"></div>
+<div class="bg-decor bg-decor__top">
+    <img src="img/bg-decor-1.png" alt="фоновая картинка">
+</div>
+<div class="bg-decor bg-decor__bottom">
+    <img src="img/bg-decor-2.png" alt="фоновая картинка">
+</div>
+<div class="modal-overlay none animate__animated animate__fadeIn">
+    <div class="modal modal-start">
+        <div class="modal-close">
+            <img src="img/modals/close-icon.png" alt="иконка закрытия">
+        </div>
+        <div class="modal-players">
+            <div class="modal-player">
+                <h3 class="modal-title modal-start__title">Укажите имя Игрока 1:</h3>
+                <input class="modal-start__input modal-start__input-red" type="text">
+            </div>
+            <div class="modal-player">
+                <h3 class="modal-title modal-start__title">Укажите имя Игрока 2:</h3>
+                <input class="modal-start__input modal-start__input-yellow" type="text">
+            </div>
+        </div>
+        <div class="modal-choose-theme">
+            <h3 class="modal-title modal-start__title">Выберите тему:</h3>
+            <div class="modal-choose-blocks">
+                <div class="theme-block theme-bugs">
+                    <img class="theme-bugs" src="img/modals/theme-bugs.png" alt="выбор темы">
+                </div>
+                <div class="theme-block theme-mushrooms">
+                    <img class="theme-mushrooms" src="img/modals/theme-mushrooms.png" alt="выбор темы">
+                </div>
+            </div>
+        </div>
+        <button class="btn modal-start-btn">начать игру</button>
+    </div>
+</div>
+<div class="modal-overlay none animate__animated animate__fadeIn">
+    <div class="modal first-step animate__animated animate__fadeIn">
+        <div class="modal-close none"></div>
+        <h2 class="modal-title modal-upper__title">ход:</h2>
+        <div class="modal-first-step-block">
+            <div class="modal-first-step-text">Вадим</div>
+            <div class="modal-first-step__decor"></div>
+        </div>
+    </div>
+</div>
+<div class="modal-overlay none animate__animated animate__fadeIn">
+    <div class="modal modal-win">
+        <div class="modal-close">
+            <img src="img/modals/close-icon.png" alt="иконка закрытия">
+        </div>
+        <h2 class="modal-title modal-upper__title">победа!</h2>
+        <div class="modal-win-player">
+            <div class="modal-win__decor"></div>
+            <span class="modal-win-name">Матвей</span>
+            <div class="modal-win__decor"></div>
+        </div>
+        <div class="modal-win-theme resize-pic"></div>
+    </div>
+</div>
+<div class="modal-overlay none animate__animated animate__fadeIn">
+    <div class="modal modal-nowin">
+        <div class="modal-close">
+            <img src="img/modals/close-icon.png" alt="иконка закрытия">
+        </div>
+        <h2 class="modal-title modal-upper__title">ничья!</h2>
+        <div class="modal-nowin-text">Победила дружба</div>
+        <div class="modal-nowin-theme">
+            <div class="modal-nowin-theme--img resize-pic"></div>
+            <div class="modal-nowin-theme--img resize-pic"></div>
+        </div>
+    </div>
+</div>
+<main class="main">
+    <div class="wrapper">
+        <div class="main-title">
+            <h1>Крестики-Нолики</h1>
+        </div>
+        <div class="start">
+            <button class="btn start-btn btn-shadow">играть</button>
+        </div>
+        <div class="players none">
+            <div class="player player-red"></div>
+            <div class="player player-yellow"></div>
+        </div>
+        <div class="game-area">
+            <div class="game-area__cell game-area__cell-1"></div>
+            <div class="game-area__cell game-area__cell-2"></div>
+            <div class="game-area__cell game-area__cell-3"></div>
+            <div class="game-area__cell game-area__cell-4"></div>
+            <div class="game-area__cell game-area__cell-5"></div>
+            <div class="game-area__cell game-area__cell-6"></div>
+            <div class="game-area__cell game-area__cell-7"></div>
+            <div class="game-area__cell game-area__cell-8"></div>
+            <div class="game-area__cell game-area__cell-9"></div>
+        </div>
+        <div class="restart none">
+            <button class="btn restart-btn">играть снова</button>
+        </div>
+    </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

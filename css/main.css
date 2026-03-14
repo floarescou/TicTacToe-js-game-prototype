@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gilroy-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+.btn {
+    width: 138px;
+    height: 48px;
+    background-color: #545E43;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+body {
+    /*position: relative;*/
+    /*height: 100vh;*/
+    overflow: hidden;
+
+    font-family: "Gilroy", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    background-color: #D8CAB9;
+}
+
+.main {
+    position: relative;
+    max-width: 1220px;
+    /*max-width: 320px;*/
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    /*padding: 47px 0 52px 0;*/
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    margin-bottom: 15px;
+}
+
+.main h1 {
+    font-size: 26px;
+    color: #805230;
+}
+
+.start {
+    margin-bottom: 25px;
+}
+
+.start-btn {
+    position: relative;
+    z-index: 2;
+}
+
+.players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 25px;
+}
+
+.player {
+    width: 135px;
+    height: 45px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-red {
+    background-color: #BA4228;
+    border-radius: 0 10px 0 10px;
+}
+
+.player-yellow {
+    background-color: #DE7235;
+    border-radius: 10px 0 10px 0;
+}
+
+.game-area {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.game-area__cell {
+    position: relative;
+    cursor: pointer;
+    width: 95px;
+    height: 95px;
+    background-color: #B9905A;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-area__cell-1, .game-area__cell-9 {
+    border-radius: 0 20px;
+}
+
+.game-area__cell-2 {
+    border-radius: 20px 20px 0 0;
+}
+
+.game-area__cell-3, .game-area__cell-7 {
+    border-radius: 20px 0;
+}
+
+.game-area__cell-4 {
+    border-radius: 20px 0 0 20px;
+}
+
+.game-area__cell-6 {
+    border-radius: 0 20px 20px 0;
+}
+
+.game-area__cell-8 {
+    border-radius: 0 0 20px 20px;
+}
